@@ -51,7 +51,7 @@
     <select />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/AenimaTest" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -189,7 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575643107364</updated>
       <workItem from="1575643111331" duration="35018000" />
-      <workItem from="1575834371971" duration="5396000" />
+      <workItem from="1575834371971" duration="5701000" />
     </task>
     <servers />
   </component>
