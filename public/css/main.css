@@ -1,0 +1,252 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero-body {
+	justify-content: space-between;
+}
+.navbar-menu.is-active {
+	position: absolute;
+	right: 0;
+	padding: 35px;
+}
+
+.nav-inactive {
+	color: #CBD0D3;
+}
+
+.nav-active {
+	color: #000;
+}
+#carousel::-webkit-scrollbar {
+	display: none;
+}
+#carousel {
+	-ms-overflow-style: none;
+    min-height: 100vh;
+    background-color: #EBEBEB;
+}
+.slider {
+	width: 100%;
+	display: flex;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.slide {
+	width: 100%;
+	flex-shrink: 0;
+	height: 100%;
+    min-height: -o-calc(100vh - 52px) ;
+    min-height: -webkit-calc(100vh - 52px);
+    min-height: -moz-calc(100vh - 52px);
+    min-height: calc(100vh - 52px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carusel-item {
+	position: relative;
+}
+.title-block {
+	color: white;
+	width: 64%;
+	position: absolute;
+	top: 40%;
+	left: 8%;
+	width: 32%;
+}
+
+.title-block h1 {
+	color: white;
+	font-size: 3rem;
+	padding-bottom: 20px;
+	border-bottom: 2px solid white;
+}
+
+.title-block h2 {
+	color: white;
+	font-weight: bold;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitle-block {
+	float: right;
+	width: 18%;
+	color: white;
+	position: absolute;
+	bottom: 17%;
+	right: 10%;
+	background-color: rgba(42, 48, 55, 0.5);
+	border: 2px dashed rgba(255, 255, 255, 0.5);
+	border-radius: 6px;
+	padding: 1.5rem;
+}
+
+.subtitle-block h1 {
+	color: #FA6980;
+}
+
+.subtitle-block h2 {
+	color: white;
+	font-weight: bold;
+}
+
+.indicator-block {
+	position: absolute;
+	left: 8%;
+	bottom: 10%;
+}
+
+.indicator-block div {
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: white;
+	font-size: 16px;
+	padding: 10px 14px;
+	border: 12px solid rgba(42, 48, 55, 0.7);
+}
+
+.section.tendencia {
+	padding-top: 40px;
+	padding-bottom: 275px;
+	background-color: #EBEBEB;
+}
+
+.section h2 {
+	font-size: 24px;
+}
+
+.section.blog {
+	margin-top: -210px;
+    padding-bottom: 20px;
+}
+
+.articulos {
+	position: relative;
+	margin-bottom: 40px;
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+
+.articulos .city {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.articulos .title {
+	position: absolute;
+	bottom: 120px;
+	left: 40px;
+	color: white;
+	font-size: 25px;
+}
+
+.articulos .description {
+	position: absolute;
+	bottom: 110px;
+	left: 40px;
+	color: white;
+}
+
+.articulos .time {
+	position: absolute;
+	color: #CBD0D3;
+	bottom: 40px;
+	left: 40px;
+	font-size: 14px;
+}
+
+.articulos .time img {
+	width: 16px;
+	height: 16px;
+}
+
+.card {
+	overflow: hidden;
+	border-radius: 6px;
+}
+.card-new {
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: #FA6980;
+    color: white;
+    margin-left: 24px;
+    margin-top: -16px;
+    position: absolute;
+}
+.card-description {
+	color: #7A838D;
+	font-size: 13px;
+    margin-bottom: 34px;
+}
+.title-cards {
+    margin-top: 34px;
+    margin-bottom: 10px !important;
+}
+
+.blog-secondary-article {
+	margin-bottom: 35px;
+}
+
+.blog-secondary-article h2 {
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.blog-secondary-article h3 {
+	margin-top: -13px;
+	color: #CBD0D3;
+	font-size: 15px;
+}
+
+.footer {
+	background-color: #2A3037;
+	padding: 3rem 1.5rem 3.5rem;
+}
+
+.footer div {
+	margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+	.title-block {
+		width: 80%;
+		margin-left: 0;
+		top: 40%;
+		left: 10%;
+	}
+    .indicator-block div {
+        font-size: 14px;
+        border: 10px solid rgba(42, 48, 55, 0.7);
+        padding: 9px 13px;
+    }
+	.indicator-block {
+		left: 10%;
+	}
+	.title-block h1 {
+		font-size: 1.7rem;
+	}
+	.title-block h1 img {
+		width: 14px;
+	}
+	.articulos .title {
+		bottom: 50px;
+	}
+
+}
