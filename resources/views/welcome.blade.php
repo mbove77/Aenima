@@ -14,7 +14,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
+
     <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
     <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 </head>
 <body>
@@ -62,6 +66,8 @@
                 <div><p>0{{$loop->iteration}}</p></div>
             </div>
 
+            <div class="time-indicator"></div>
+
             <div class="title-block">
                 <h1 class="title">
                     <img src="images/iconos/ic_pin.png" alt="Icono de lugar">
@@ -83,7 +89,9 @@
                 </h2>
                 <p class="is-size-6">{{$slider->descripcion_secundario}}</p>
             </div>
-
+            <div class="play-pause">
+                <span class="icon"></span>
+            </div>
         </div>
         @endforeach
 

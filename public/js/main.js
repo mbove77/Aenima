@@ -15,18 +15,49 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // slider logic
+let start = true;
+const sliderInter = 7000;
+const scrollAnim  = 2000;
+let timeWidth = 0;
+
 $( document ).ready(function() {
-  const sliderInter = 5000;
-  const scrollAnim  = 2000;
-  const start = false;
+    timeWidth = $('.indicator-block').offset().left;
+    butonPlayPause(start);
+    $(".time-indicator").animate({width: timeWidth}, sliderInter);
 
-  if(start) {
-    let i = 0;
-    let elements = $('#carousel').children();
+    // Hace para el slider on mouse over de distintos elementos.
+    /*$('.indicator-block').hover(function() { start = false; butonPlayPause(start)}, function() {start = true;  butonPlayPause(start)});
+    $('.title-block').hover(function() { start = false; butonPlayPause(start) }, function() {start = true; butonPlayPause(start)});
+    $('.subtitle').hover(function() { start = false;  butonPlayPause(start) }, function() {start = true;  butonPlayPause(start)});
+    $('.subtitle-block').hover(function() { start = false;  butonPlayPause(start) }, function() {start = true;  butonPlayPause(start)});*/
+
+    let i = 0; let elements = $('#carousel').children();
     let myInterval = setInterval(function () {
-      (i < elements.length - 1) ? i++ : i = 0;
-      $('#carousel').scrollTo(elements[i], {duration: scrollAnim});
+      if(start) {
+          $(".time-indicator").css("width", 0); $(".time-indicator").stop(); $(".time-indicator").animate({width: timeWidth}, sliderInter);
+          (i < elements.length - 1) ? i++ : i = 0;
+          $('#carousel').scrollTo(elements[i], {duration: scrollAnim});
+      }
     }, sliderInter);
-  }
-
 });
+
+function butonPlayPause(isPlay) {
+    const playCont = $('.icon');
+    const playElement   = "<i class='fas fa-play-circle' onclick='handeClick()'/>";
+    const pauseElement  = "<i class='fas fa-pause-circle' onclick='handeClick()'/>";
+
+    if(isPlay) {
+        playCont.empty();
+        playCont.append(playElement);
+        $(".time-indicator").animate({width: timeWidth}, sliderInter);
+    } else {
+        playCont.empty();
+        playCont.append(pauseElement);
+        $(".time-indicator").stop()
+    }
+}
+
+function handeClick() {
+    start = !start;
+    butonPlayPause(start);
+}

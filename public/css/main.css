@@ -113,6 +113,24 @@ body {
 	border: 12px solid rgba(42, 48, 55, 0.7);
 }
 
+.play-pause {
+    position: absolute;
+    bottom: 25px;
+    left: 48%;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.time-indicator {
+    position: absolute;
+    bottom: 12.5%;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #FA6980;
+}
+
 .section.tendencia {
 	padding-top: 40px;
 	padding-bottom: 275px;
@@ -248,5 +266,7 @@ body {
 	.articulos .title {
 		bottom: 50px;
 	}
-
+    .time-indicator {
+        bottom: 14.5%;
+    }
 }
