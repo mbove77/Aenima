@@ -57,6 +57,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -163,7 +164,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -195,7 +196,7 @@
       <updated>1575643107364</updated>
       <workItem from="1575643111331" duration="35018000" />
       <workItem from="1575834371971" duration="9416000" />
-      <workItem from="1577984432614" duration="13459000" />
+      <workItem from="1577984432614" duration="15712000" />
     </task>
     <servers />
   </component>
@@ -207,10 +208,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="873" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1575645105964" />
+    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1578009220973">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1578009220973" />
     <state x="1117" y="623" key="NewPhpFileDialog" timestamp="1575662154348">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1117" y="623" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1575662154348" />
+    <state x="782" y="344" key="SettingsEditor" timestamp="1578009226003">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="782" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1578009226003" />
     <state x="1078" y="520" width="404" height="356" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1575662652713">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

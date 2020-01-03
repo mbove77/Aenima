@@ -101,12 +101,12 @@ class SliderController extends Controller
     {
         request()->validate([
             'image_url' => 'nullable|image|mimes:jpeg,jpg|max:4096|dimensions:min_width=1200',
-            'titulo_principal' => 'required|min:4|max:255',
-            'subtitulo_principal' => 'required|min:4|max:255',
-            'descripcion_principal' => 'required|min:4',
-            'titulo_secundario' => 'required|min:4|max:255',
-            'subtitulo_secundario' => 'required|min:4|max:255',
-            'descripcion_secundario' => 'required|min:4',
+            'titulo_principal' => 'required|min:4|max:64',
+            'subtitulo_principal' => 'required|min:4|max:180',
+            'descripcion_principal' => 'required|min:4|max:800',
+            'titulo_secundario' => 'required|min:4|max:64',
+            'subtitulo_secundario' => 'required|min:4|max:96',
+            'descripcion_secundario' => 'required|min:4|max:512',
         ]);
 
         if ($request->has('image_url')) {

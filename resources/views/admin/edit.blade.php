@@ -6,6 +6,16 @@
         @csrf
         @method('PATCH')
 
+        @if($errors->any())
+            <div class="notification is-danger" style="margin-top: 1em">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <div class="field">
             <label class="label">Imagen del Slider</label>
 
@@ -31,43 +41,49 @@
         <div class="field">
             <label class="label">Titulo</label>
             <div class="control">
-                <input name="titulo_principal" class="input" type="text" placeholder="Titulo del slider" required="true" value="{{ $slider->titulo_principal }}">
+                <input name="titulo_principal" class="input" min="4" max="64" type="text" placeholder="Titulo del slider" required="true" value="{{ $slider->titulo_principal }}" >
             </div>
+            <p class="help">Mínimo 4 caracteres, tamaño maximo 64 caracteres.</p>
         </div>
 
         <div class="field">
             <label class="label">Subtitulo</label>
             <div class="control">
-                <input name="subtitulo_principal" class="input" type="text" placeholder="Subtitulo del slider" required="true" value="{{ $slider->subtitulo_principal }}">
+                <input name="subtitulo_principal" class="input" min="4" max="180" type="text" placeholder="Subtitulo del slider" required="true" value="{{ $slider->subtitulo_principal }}">
             </div>
+            <p class="help">Mínimo 4 caracteres, tamaño maximo 180 caracteres.</p>
         </div>
 
         <div class="field">
             <label class="label">Descripcion</label>
             <div class="control">
-                <textarea name="descripcion_principal" class="textarea" placeholder="Descripcion del slider" required="true">{{ $slider->descripcion_principal }}</textarea>
+                <textarea name="descripcion_principal" class="textarea" placeholder="Descripcion del slider" required="true" minlength="4" maxlength="800">{{ $slider->descripcion_principal }}</textarea>
             </div>
+            <p class="help">Mínimo 4 caracteres, tamaño maximo 800 caracteres.</p>
         </div>
 
         <div class="field">
             <label class="label">Titulo Secundario</label>
             <div class="control">
-                <input name="titulo_secundario" class="input" type="text" placeholder="Titulo secundario del slider" required="true" value="{{ $slider->titulo_secundario }}">
+                <input name="titulo_secundario" class="input" class="input" min="4" max="64" type="text" placeholder="Titulo secundario del slider" required="true" value="{{ $slider->titulo_secundario }}">
             </div>
+            <p class="help">Mínimo 4 caracteres, tamaño maximo 64 caracteres.</p>
         </div>
 
         <div class="field">
             <label class="label">Subtitulo Secundario</label>
             <div class="control">
-                <input name="subtitulo_secundario" class="input" type="text" placeholder="Subtitulo secundario del slider" required="true" value="{{ $slider->subtitulo_secundario }}">
+                <input name="subtitulo_secundario" class="input" class="input" min="4" max="96" type="text" placeholder="Subtitulo secundario del slider" required="true" value="{{ $slider->subtitulo_secundario }}">
             </div>
+            <p class="help">Mínimo 4 caracteres, tamaño maximo 96 caracteres.</p>
         </div>
 
         <div class="field">
             <label class="label">Descripcion Secundaria</label>
             <div class="control">
-                <textarea name="descripcion_secundario" class="textarea" placeholder="Descripcion secundaria del slider" required="true">{{ $slider->descripcion_secundario }}</textarea>
+                <textarea name="descripcion_secundario" class="textarea" placeholder="Descripcion secundaria del slider" required="true" minlength="4" maxlength="512">{{ $slider->descripcion_secundario }}</textarea>
             </div>
+            <p class="help">Mínimo 4 caracteres, tamaño maximo 512 caracteres.</p>
         </div>
 
         <div class="control">
@@ -75,15 +91,7 @@
         </div>
     </form>
 
-    @if($errors->any())
-        <div class="notification is-danger" style="margin-top: 1em">
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li>{{$error}}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+
 
     <script>
         const fileInput = document.querySelector('#slider_file input[type=file]');
