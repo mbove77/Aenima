@@ -115,9 +115,9 @@ body {
 
 .play-pause {
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     left: 48%;
-    color: white;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 40px;
     cursor: pointer;
 }

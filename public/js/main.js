@@ -19,6 +19,7 @@ let start = true;
 const sliderInter = 7000;
 const scrollAnim  = 2000;
 let timeWidth = 0;
+let currentItemIndex = 0;
 
 $( document ).ready(function() {
     timeWidth = $('.indicator-block').offset().left;
@@ -36,15 +37,21 @@ $( document ).ready(function() {
       if(start) {
           $(".time-indicator").css("width", 0); $(".time-indicator").stop(); $(".time-indicator").animate({width: timeWidth}, sliderInter);
           (i < elements.length - 1) ? i++ : i = 0;
-          $('#carousel').scrollTo(elements[i], {duration: scrollAnim});
+          scrollToSlide(elements[i]);
+          currentItemIndex = i;
       }
     }, sliderInter);
 });
+
+function scrollToSlide(element) {
+    $('#carousel').scrollTo(element, {duration: scrollAnim});
+}
 
 function butonPlayPause(isPlay) {
     const playCont = $('.icon');
     const playElement   = "<i class='fas fa-play-circle' onclick='handeClick()'/>";
     const pauseElement  = "<i class='fas fa-pause-circle' onclick='handeClick()'/>";
+    $(".time-indicator").stop();
 
     if(isPlay) {
         playCont.empty();
@@ -53,7 +60,6 @@ function butonPlayPause(isPlay) {
     } else {
         playCont.empty();
         playCont.append(pauseElement);
-        $(".time-indicator").stop()
     }
 }
 
@@ -61,3 +67,11 @@ function handeClick() {
     start = !start;
     butonPlayPause(start);
 }
+
+$(window).focus(function() {
+    start = true;
+    butonPlayPause(start);
+}).blur(function() {
+    start = false;
+    butonPlayPause(start);
+});

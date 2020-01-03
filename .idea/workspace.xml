@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +195,8 @@
       <updated>1575643107364</updated>
       <workItem from="1575643111331" duration="35018000" />
       <workItem from="1575834371971" duration="9416000" />
-      <workItem from="1577984432614" duration="15712000" />
+      <workItem from="1577984432614" duration="16662000" />
+      <workItem from="1578016405557" duration="1933000" />
     </task>
     <servers />
   </component>
@@ -224,10 +224,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1078" y="520" width="404" height="356" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1575662652713" />
-    <state x="977" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1575834405156">
+    <state x="977" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1578016405916">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="977" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1575834405156" />
+    <state x="977" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1578016405916" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1575668428743">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
